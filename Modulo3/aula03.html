@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Categorias <HTML></HTML></title>
+</head>
+<body>
+    <h1>    
+        Categoria de HTML 5
+    </h1>
+    <h3>Elementos de bloco
+    <p> 
+        Ocupam toda a largura horizintal disponível, exemplo: &lt;div&gt; &lt;p&gt; &lt;h1&gt; &lt;section&gt; &lt;article&gt;
+    </p>
+    </h3>
+    <h3>  
+        Elemento de linha
+    </h3>     
+    <p> 
+        Ocupam apenas o espaço necessário na linha, exemplo:  &lt;a&gt; &lt;span&gt; &lt;strong&gt;  &lt;em&gt; &lt;img&gt;
+    </p>
+<h5>    
+    Regras importantes
+</h5>
+<p> 
+    Elementos de linha não devem conter elementos de bloco.
+</p>
+
+<h6>    
+    Exemplo incorreto:
+</h6>
+
+<span><div>Texto</div></span>
+
+<h6>
+Exemplo correto:
+</h6>
+
+<div><span>Texto</span></div>
+
+<h3>    
+    Categorias de conteúdo:
+</h3>
+
+<h4>
+    Metadata Content
+</h4>
+
+<p>
+    São informações de configurações do arquivo HTML
+</p>
+<p>&lt;title&gt;: Informa o título da página</p>
+<p>&lt;meta&gt;: Definir códificação</p>
+<p>&lt;link&gt;: e o &lt;style&gt; Importar/anexar CSS</p>
+<p>&lt;script&gt;: Importar/anexar comandos JavaScript</p>
+
+<h4>
+    Flow Content:
+</h4>
+<p>Representa a maior parte dos elementos usados no body
+</p>
+<p> &lt;div&gt;: Criar uma divisão genérica, agrupar "pedaços" de código</p>
+<p>&lt;p&gt; Criar paragráfo dentro da página</p> 
+<p>&lt;section&gt;: Agrupa conteúdos que partilham do mesmo assunto/ideia</p>
+<p>&lt;article&gt;: Conteúdo independente e completo por sí só (faz sentido sozinho)</p>
+<p>&lt;img&gt;: Importar imagem, desenho, foto (não precisa de tag de fechamento)</p>
+<p>&lt;form&gt;: Criar formulários, o usuário pode digitar dados e/ou enviar mensagem, fazer login</p>
+
+<h4>    
+    Sectioning Content
+</h4>
+<p>
+    Organizae grandes áreas do documento
+</p>
+<p>&lt;section&gt;: Agrupa conteúdos que partilham do mesmo assunto/ideia</p>
+<p>&lt;article&gt;: Conteúdo independente e completo por sí só (faz sentido sozinho)</p>
+<p>&lt;aside&gt;: Serve para guardar um conteúdo secundário/lateral (links relacionados, anúncios, biografias e etc..)</p>
+<p>&lt;nav&gt;: Agrupar links de navegação</p>
+
+<h4>
+    Heading Content
+</h4>
+<p>h1,h2,h3,h4,h5 e h6: Adicionar títulos e subtítulos</p>
+<p>&lt;hgroup&gt;: Agrupar elementos de titulo, exemplo</p>
+<hgroup>
+    <h5>Aprenda HTML</h5>
+    <h6> SENAI Americana</h6>
+</hgroup>
+
+<h4>
+    Phrasing Content
+</h4>
+<p>
+    Elementos que marcam textos ou partes de textos
+</p>
+<p>&lt;span&gt;: Um bloco genérico, não muda nada sozinho,porém pode aplicar CSS ou chamar funções com JavaScript
+</p>
+<p>&lt;a&gt;: Criar um link para direcionar o usuário para outra página, utilizando o atributo href
+    <a href="https://bitcoin.org/pt_BR/"
+    target="_parent">Clique para conhecer</a>
+</p>
+<p>&lt;strong&gt;: Serve para deixar uma parte do texto em <strong>negrito</p>
+<p>&lt;em&gt;: Serve para deixar uma parte do texto em <em> itálico</p>
+<p>&lt;mark&gt;: Serve para adicionar um marcador em uma parte do texto <mark style="background-color: deeppink;">Texto</mark></p>
+<p>&lt;img&gt;: Importar imagem, desenho, foto (não precisa de tag de fechamento)</p>
+
+<h4>
+    Embadded Content
+</h4>
+<p>Utilizado para inserir um conteúdo externo</p>
+<p>&lt;img&gt;: Importar imagem, desenho, foto (não precisa de tag de fechamento)</p>
+<p>&lt;video&gt;: Adicionar um vídeo (Pode mostrar botões de play e pause) </p>
+<p>&lt;canvas&gt;: Criar uma tela em branco que poderá ser usada pelo JavaScript </p>
+<p>&lt;svg&gt;: Desenhar gráficos baseados em vetores </p>
+<p>&lt;iframe&gt;: Colocar outras páginas inteiras dentro do seu website (muito usado para adicionar mapas e vídeos)</p>
+
+<h4> 
+    Interactive Content
+</h4>
+<p>Permite interação com os usuários</p>
+<p>&lt;a&gt;: Criar um link para direcionar o usuário para outra página</p>
+<p>&lt;button&gt;: Cria botão. Exemplo: <button>Teste</button> </p>
+<p>&lt;imput&gt;: Usuário para receber dados do usuários. Dentre os dados aceitos estão: </p>
+<p> type= "text": campo de texto curto;
+    type= "password": oculta os caracteres digitados;
+    type= "email" ou "number": valida dados especificos;
+    type= "checkbox" ou "radio": caixas de marcação e escolha única.
+    ***type é uma tag que não precisa de fechamento
+</p>
+    <p>
+    &lt;select&gt;: Criar uma caixa de seleção em formato de linha suspensas(dropdown)
+    <select name="fruta" id="fruta">
+        <option value = "" disabled selected>Selecione uma opção</option>
+        <option value="maçã">Maçã</option>
+        <option value="banana">Banana</option>
+        <option value="morango">Morango</option>
+</select>
+    </p>
+<p>
+    &lt;textarea&gt;: Criar uma caixa com várias linhas, serve para textos longos, comentários, mensagens e biografias
+</p>
+<h4> Listas em HTML:</h4>
+<p>Lista não ordenada (ul). Exemplo:</p>
+<ul>
+    <li>Item 1</li>
+    <li>Item 2</li>
+    <li>Item 3</li>
+</ul>
+<p>Lista ordenada (ol). Exemplo:</p>
+<ol>
+    <li>Item 1</li>
+    <li>Item 2</li>
+    <li>Item 3</li>
+    <li>Item 4</li>
+    <li>Item 5</li>
+</ol>
+
+
+</body>
+</html>
