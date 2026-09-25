@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário </title>
+</head>
+
+<body>
+    <h1>Pesquisa de satisfação</h1>
+
+    <h2>Seja bem vindo a pesquisa de satisfação da nossa empresa!</h2>
+    <p><b> Cadastre seus dados</b></p>
+
+    <label for="nome">
+        Nome:
+    </label>
+    <br>
+    <input type="text" id="nome" name="nome" required placeholder="Digite seu nome completo">
+    <br><br>
+    <label for="email">
+        E-mail:
+    </label>
+    <br>
+    <input type="email" id="email" name="email" required placeholder="Digite seu E-mail">
+    <br><br>
+    <label for="telefone">
+        Telefone:
+    </label>
+    <br>
+    <input type="tel" id="telefone" pattern="[0-9]{11}" placeholder="(00)00000-0000">
+    <br><br>
+    <h3>Avaliação Geral</h3>
+
+    <p>Como você avalia nosso atendimento?</p>
+
+    <input type="radio" id="otimo" name="avaliacao" value="otimo">
+    <label for="otimo">Ótimo</label>
+
+    <br>
+
+    <input type="radio" id="bom" name="avaliacao" value="bom">
+    <label for="bom">Bom</label>
+
+    <br>
+
+    <input type="radio" id="regular" name="avaliacao" value="regular">
+    <label for="regular">Regular</label>
+
+    <br>
+
+    <input type="radio" id="ruim" name="avaliacao" value="ruim">
+    <label for="ruim">Ruim</label>
+
+    <br><br>
+
+
+    <h3>Serviços Utilizados</h3>
+
+    <p>Quais serviços você utilizou?</p>
+
+    <input type="checkbox" id="compra" name="servicos" value="compra">
+    <label for="atendimento">Compra</label>
+
+    <br>
+
+    <input type="checkbox" id="suporte" name="servicos" value="suporte">
+    <label for="suporte">Suporte</label>
+
+    <br>
+
+    <input type="checkbox" id="treinamento" name="servicos" value="treinamento">
+    <label for="treinamento">Treinamento</label>
+
+    <br>
+
+    <input type="checkbox" id="mentoria" name="servicos" value="mentoria">
+    <label for="mentoria">Mentoria</label>
+
+    <br><br>
+
+
+    <h3>Unidade Atendida</h3>
+
+    <label for="unidade">Escolha a unidade:</label>
+
+    <br>
+
+    <select id="unidade" name="unidade" required>
+        <option value="">Selecione uma unidade</option>
+        <option value="americana">Americana</option>
+        <option value="ourinhos">Ourinhos</option>
+        <option value="barra-bonita">Barra Bonita</option>
+        <option value="sorocaba">Sorocaba</option>
+    </select>
+    <br><br>
+    <button type="submit">
+        Cadastrar-se
+    </button>
+
+    </form>
+    
+
+
+
+</body>
+
+</html>
